@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# 2021 Women's History Month Issue
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
