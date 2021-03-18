@@ -5,6 +5,7 @@ body {
   font-family: 'Prata','Khula';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #FCF7EC;
 }
 
 code {
