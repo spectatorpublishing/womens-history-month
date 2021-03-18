@@ -10,12 +10,12 @@ const Body = styled.a`
     width: 761px;
     height: 270px;
     border: none;
-    background: rgba(255, 255, 255, 0.75);
+    background: transparent;
     display: flex;
     text-decoration: none;
 
     :hover{
-        background: #FCF7EC;
+        background: rgba(255, 255, 255, 0.75);
     }
 `
 
