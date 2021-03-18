@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './containers/home';
 import Section from './containers/section';
 import Navbar from './components/navbar';
+import Logo from './components/logo';
 
 const App = () => {
   return (
     <main>
+      <Logo/>
       <Navbar/>
       <Router>
         <Switch>
