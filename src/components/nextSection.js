@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import image from './primaryImage.png'
+import image from './images/primaryImage.png'
 
 const Body = styled.a`
     position: absolute;
@@ -26,6 +26,8 @@ const TextBox = styled.div`
     flex-direction: column-reverse;
     align-items: flex-end;
     justify-content: center;
+
+    color: #000000;
 `
 
 const NextText = styled.text`
@@ -38,8 +40,6 @@ const NextText = styled.text`
     align-items: center;
     text-align: right;
     text-transform: uppercase;
-
-    color: #000000;
 `
 
 const Begin = styled.text`
