@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Playfair+Display:wght@500&display=swap');
 body {
   margin: 0;
-  font-family: 'Prata','Khula';
+  font-family: 'Prata','Khula','Playfair Display';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #FCF7EC;
 }
 
 code {
