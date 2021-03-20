@@ -17,7 +17,9 @@ const Card = styled.div`
     cursor: pointer;
     :hover{
         background-color: rgba(255, 255, 255, 0.75);
-
+        img{
+            opacity: 30%;
+        }
     }
 `;
 
@@ -35,7 +37,7 @@ const Name = styled.div`
 `;
 
 const Image = styled.div`
-    background-color: lightgrey;
+    background-color: #FDC089;
     margin: 20px;
     width: 320px;
     height: 200px;
