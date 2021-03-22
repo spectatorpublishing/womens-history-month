@@ -10,14 +10,14 @@ const Article1 = ({title1, author1, imageURL1, link1, title2, author2, imageURL2
             author={author1}
             imageURL ={imageURL1}
             link = {link1}
-            side = 'right'
+            side = 'left'
         />
         <Article
             title={title2}
             author={author2}
             imageURL ={imageURL2}
             link = {link2}
-            side = 'left'
+            side = 'right'
         />
         </div>
     );
