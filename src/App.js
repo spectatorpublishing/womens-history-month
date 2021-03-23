@@ -12,7 +12,11 @@ const App = () => {
       <Router>
         <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/article' component={Section} />
+            <Route exact path='/news' component={Section} />
+            <Route exact path='/a&e' component={Section} />
+            <Route exact path='/spectrum' component={Section} />
+            <Route exact path='/sports' component={Section} />
+            <Route exact path='/credits' component={Section} />
         </Switch>
       </Router>
     </main>
