@@ -1,5 +1,6 @@
 import { React, useState } from 'react';
 import styled from 'styled-components';
+import Logo from './logo'
 import { device } from '../device';
 
 const Nav = styled.div`
