@@ -17,8 +17,9 @@ const Banner = () => (
 export default Banner;
 
 const Wrapper = styled.div`
-    margin: 0;
-    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("banner-image.png");
 `;
 
 const Text = styled.div`
