@@ -11,9 +11,9 @@ const Logo = () => (
 export default Logo;
 
 const Wrapper = styled.div`
-    margin: 2rem;
+    margin: 1rem;
     padding: 2rem;
     img {
-        width: 17rem;
+        width: 12rem;
     }
 `;

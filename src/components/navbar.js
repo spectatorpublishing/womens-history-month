@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Logo from './logo'
 import { device } from '../device';
 
 const Navbar = () => {
     return (
         <Nav>
+            <Logo/>
             <a href="/">
                 Home
             </a>
@@ -30,9 +32,12 @@ const Navbar = () => {
 export default Navbar;
 
 const Nav = styled.nav`
+    display: flex;
+    flex-direction: row;
     a{
         text-decoration: none;
         padding: 1rem;
         color: black;
+        margin: auto;
     }
 `;
