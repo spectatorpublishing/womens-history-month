@@ -3,11 +3,18 @@ import styled from 'styled-components';
 
 const Card = styled.div`
     display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    height: 360px;
-    width: 360px;
+    flex-direction: column;    
     font-weight: 400;
+
+    @media only screen and (max-width: 600px) {
+        width: 18rem;
+    }
+    
+    @media only screen and (min-width: 601px) {
+        height: 22.5rem;
+        width: 22.5rem;
+        margin: 1rem;
+    }
 
     a {
         text-decoration: none;
@@ -25,22 +32,22 @@ const Card = styled.div`
 
 const Title = styled.div`
     font-weight: 400;
-    font-size: 18px;
-    margin: 0 20px 0 20px;
+    font-size: 1.125rem;
+    margin: 0 1.25rem 0 1.25rem;
 `;
 
 const Name = styled.div`
     font-family: "Khula";
     font-weight: 400;
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.125rem;
+    margin: 0 1.25rem 0 1.25rem;
 `;
 
 const Image = styled.div`
     background-color: #FDC089;
-    margin: 20px;
-    width: 320px;
-    height: 200px;
+    margin: 1.25rem;
+    width: 20rem;
+    height: 12.5rem;
     overflow: hidden;
 
     img {
@@ -48,23 +55,12 @@ const Image = styled.div`
         margin: auto;
     }
 
-`;
-/*
-const Tint = styled.div`
-    :hover { 
-        opacity: .5; -webkit-filter: grayscale(100%) sepia(100%); 
+    @media only screen and (max-width: 600px) {
+        width: 16rem;
+        height: 10rem;
     }
-`;
 
-const Orange = styled.div`
-    position: absolute:
-    height: 360px;
-    width: 360px;
-    border: 20px 20px 120px 20px solid transparent;
-    :hover { 
-        background-color: orange; 
-    }
-`;*/
+`;
 
 const ArticleCard = ({ title, name, imageURL, buttonLink }) => {
     return (
