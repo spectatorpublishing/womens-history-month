@@ -5,8 +5,6 @@ import NextSection from '../components/nextSection';
 
 const HomeContainer = styled.div`
     background: #FCF7EC;
-    width: 1440px;
-    height: 1950px;
 `
 
 
