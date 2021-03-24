@@ -7,7 +7,6 @@ const HomeContainer = styled.div`
     background: #FCF7EC;
 `
 
-
 const Home = () => (
     <HomeContainer>
         Home
