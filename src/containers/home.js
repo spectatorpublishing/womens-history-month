@@ -1,15 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import { device } from '../device';
-import Letter from '../components/editorLetter';
+import NextSection from '../components/nextSection';
 
-const Home = () => {
-    return(
-        <main>
-            <div>Home</div>
-            <Letter/>
-        </main>
-    );
-};
+const HomeContainer = styled.div`
+    background: #FCF7EC;
+`
+
+const Home = () => (
+    <HomeContainer>
+        Home
+        <NextSection nextseclink='/article' nextsec='News'></NextSection>
+    </HomeContainer>
+
+
+
+);
 
 export default Home;
