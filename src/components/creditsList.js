@@ -6,13 +6,15 @@ import Article1 from '../components/article1';
 const Wrapper = styled.div`
     padding: 0;
     margin: 0;
+    width:100vw;
 `;
 
 const Text = styled.div`
     text-align: center;
-    padding-bottom: 5rem;
+    padding: 0 5rem 0rem 5rem;
     display: flex;
-    font-family: Prata;
+    flex-direction: row;
+    justify-content: center;
     font-family: Khula;
     font-style: normal;
     font-weight: normal;
@@ -32,14 +34,11 @@ const Column = styled.div`
     flex-flow: column wrap;
     text-align: left;
     justify-content: flex-start;
-    width: 75vw;
-    @media ${device.tablet} {
-        width: 20rem;
-    }
+    margin: 3rem;
 `;
 
 const SubDiv = styled.div`
-
+    padding-bottom: 6rem;
 `;
 
 
@@ -137,7 +136,9 @@ const CreditsList = () => {
                             <p>Nicole Yang</p>
                         </div>
                     </SubDiv>
-                    {/* <SubDiv>
+                </Column>
+                <Column>
+                    <SubDiv>
                         <div>
                             <h2>Copy</h2>
                             <p>Emma Bradbury, Head Copy Editor</p>
@@ -164,7 +165,7 @@ const CreditsList = () => {
                             <p>Leif Wood</p>
                             <p>Renuka Balakrishnan</p>
                         </div>
-                    </SubDiv> */}
+                    </SubDiv>
                 </Column>
             </Text>
         </Wrapper>
