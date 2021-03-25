@@ -1,21 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import ArticleCard from '../components/article-card'
-import SectionTitle from '../components/section-title';
+import ArticleCard from './article-card'
+import SectionTitle from './section-title';
 
 const Articles = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-around;
     align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+    margin: 2rem 0rem 2rem 0rem;
+    background-color: rgba(255, 255, 255, 0.75);
 `;
 
-const ArticleTest = () => (
-    <div>
-    <SectionTitle
-        title = 'ARTICLES'
-    />
+const ArticleCards = () => (
     <Articles>
         <ArticleCard
             title = 'This is an Article and it is Numbered One'
@@ -38,7 +37,6 @@ const ArticleTest = () => (
             buttonLink = '/Article3'
         />
     </Articles>
-    </div>
 );
 
-export default ArticleTest;
+export default ArticleCards;
