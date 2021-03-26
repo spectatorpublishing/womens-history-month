@@ -34,10 +34,18 @@ export default Navbar;
 const Nav = styled.nav`
     display: flex;
     flex-direction: row;
+    font-family: Khula;
+    font-size: 18px;
+    margin: 0rem 6rem 0rem 3rem;
+
     a{
         text-decoration: none;
-        padding: 1rem;
+        padding: 0rem;
         color: black;
         margin: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
     }
 `;

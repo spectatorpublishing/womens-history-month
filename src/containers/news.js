@@ -1,15 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-import { device } from '../device';
+import styled from 'styled-components/macro';
 import SectionTitle from '../components/section-title';
 import Article1 from '../components/article1';
 import ArticleCards from '../components/articleCards';
 import NextSection from '../components/nextSection';
+import ArticleCard from '../components/article-card';
 
-const News = () => {
+const News = ({articles, header, next, nextLink}) => {
     return(
-        <>
-        <SectionTitle title="News"/>
+        <main>
+        <SectionTitle title={header}/>
+        <Desktop>
         <Article1
             title1="This is an article title and it is a news article"
             author1="John Doe and Jane Doe"
@@ -33,9 +34,30 @@ const News = () => {
             imageURL2 = 'https://patch.com/img/cdn20/users/23306266/20200814/041504/styles/patch_image/public/columbia-university-building___14161440408.jpg'
             link2= '/news'
         />
-        <NextSection nextseclink='/news' nextsec='Arts & Enterntainment' image="https://patch.com/img/cdn20/users/23306266/20200814/041504/styles/patch_image/public/columbia-university-building___14161440408.jpg"></NextSection>
-        </>
+        </Desktop>
+        <Mobile>
+            {articles.map(article => (
+                <ArticleCard article={article} />
+            ))}
+        </Mobile>
+        <NextSection nextseclink={nextLink} nextsec={next} image="https://patch.com/img/cdn20/users/23306266/20200814/041504/styles/patch_image/public/columbia-university-building___14161440408.jpg"></NextSection>
+        </main>
     );
 };
 
 export default News;
+
+const Mobile = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media (min-width: 768px) {
+        display: none;
+    }
+`;
+
+const Desktop = styled.div`
+    @media (max-width: 768px) {
+        display: none;
+    }
+`;

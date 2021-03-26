@@ -2,12 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './containers/home';
 import News from './containers/news';
-import AandE from './containers/AandE';
-import Spectrum from './containers/Spectrum';
-import Sports from './containers/Sports';
 import Navbar from './components/navbar';
-import ArticleTest from './components/articleCards';
-import Logo from './components/logo';
+import { news_articles } from './data/news_articles';
 
 const App = () => {
   return (
@@ -16,11 +12,36 @@ const App = () => {
       <Router>
         <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/news' component={News} />
-            <Route exact path='/a&e' component={AandE} />
-            <Route exact path='/spectrum' component={Spectrum} />
-            <Route exact path='/sports' component={Sports} />
-            <Route exact path='/credits' component={News} />
+            <Route
+              path='/news'
+              render={(props) => (
+                <News {...props} articles={news_articles} header='News' next='Arts & Entertainment' nextLink='/a&e'/>
+              )}
+            />
+            <Route
+              path='/a&e'
+              render={(props) => (
+                <News {...props} articles={news_articles} header='Arts & Entertainment' next='Spectrum' nextLink='/spectrum'/>
+              )}
+            />
+            <Route
+              path='/spectrum'
+              render={(props) => (
+                <News {...props} articles={news_articles} header='Spectrum' next='Sports' nextLink='/sports'/>
+              )}
+            />
+            <Route
+              path='/sports'
+              render={(props) => (
+                <News {...props} articles={news_articles} header='Sports' next='Credits' nextLink='/credits'/>
+              )}
+            />
+            <Route
+              path='/credits'
+              render={(props) => (
+                <News {...props} articles={news_articles} header='Credits' next='Home' nextLink='/'/>
+              )}
+            />
         </Switch>
       </Router>
     </main>

@@ -53,11 +53,10 @@ const Begin = styled.text`
 `
 
 const Img = styled.div`
-    background: white;
     margin: 2.188rem 3rem 2.188rem 3rem;
 
     @media only screen and (max-width: 750px){
-        margin: 1rem;
+        margin: 1rem 3rem 1rem 1rem;
     }
 `
 

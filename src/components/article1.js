@@ -4,7 +4,7 @@ import { device } from '../device';
 
 const Article1 = ({title1, author1, imageURL1, link1, title2, author2, imageURL2, link2}) => {
     return(
-        <div>
+        <ArticleSection>
         <Article
             title={title1}
             author={author1}
@@ -19,7 +19,7 @@ const Article1 = ({title1, author1, imageURL1, link1, title2, author2, imageURL2
             link = {link2}
             side = 'right'
         />
-        </div>
+        </ArticleSection>
     );
 };
 
@@ -48,7 +48,9 @@ const Article = ({side, title, author, imageURL, link}) => {
         );
     }
 };
-
+const ArticleSection = styled.div`
+    margin: 0rem 8rem 0rem 8rem;
+`;
 const Wrapper = styled.a`
     color: black;
     text-decoration: none;
@@ -60,7 +62,7 @@ const Wrapper = styled.a`
     }
 
     .textbox {
-        margin: auto 0rem auto auto;
+        margin: auto -13rem auto auto;
         padding: 0.2rem 1rem 1.2rem 1rem;
     }
 
@@ -68,7 +70,8 @@ const Wrapper = styled.a`
         img {
             display: block;
             object-fit: contain;
-            margin: auto 0 auto -13rem;
+            margin: auto 0 auto 0rem;
+            width: 28rem;
             height: 22rem;
         }
         .textbox {
@@ -78,12 +81,13 @@ const Wrapper = styled.a`
 
     &.right {
         .textbox {
-            margin: auto auto auto 0rem;
+            margin: auto 0rem auto -13rem;
+            padding: 0.2rem 1rem 1.2rem 1rem;
         }
     
         :hover{
             img {
-                margin: auto -13rem auto auto;
+                margin: auto 0rem auto auto;
             }
         }
     }
@@ -116,7 +120,7 @@ const Author = styled.div`
     margin-left: 1rem;
 `;
 const Image = styled.div`
-    width: 33rem;
+    width: 28rem;
     height: 22rem;
     z-index: -1;
 `;

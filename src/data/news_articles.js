@@ -1,36 +1,4 @@
-import React from 'react';
-import styled from 'styled-components';
-import ArticleCard from './article-card'
-import SectionTitle from './section-title';
-
-const Articles = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0rem 5rem 0rem 5rem;
-    margin: 2rem 0rem 2rem 0rem;
-    background-color: rgba(255, 255, 255, 0.75);
-`;
-
-const ArticleCards = () => (
-    <Articles>
-        <ArticleCard
-            article={news_articles[0]}
-        />
-        <ArticleCard
-            article={news_articles[1]}
-        />
-        <ArticleCard
-            article={news_articles[2]}
-        />
-    </Articles>
-);
-
-export default ArticleCards;
-
-const news_articles = [
+export const news_articles = [
     {
         image_url: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5NAL2ERLFFFVTLN2JGNBJFIBNI.gif",
         article_title: "The New Columbia Bubble: First-Generation Low-Income Students Form The Majority In Pandemic-Era Dorms",
