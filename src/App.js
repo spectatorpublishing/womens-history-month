@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './containers/home';
-import Section from './containers/section';
+import News from './containers/news';
+import AandE from './containers/AandE';
+import Spectrum from './containers/Spectrum';
+import Sports from './containers/Sports';
 import Navbar from './components/navbar';
 import ArticleTest from './containers/article-test';
 import Credits from './containers/credits';

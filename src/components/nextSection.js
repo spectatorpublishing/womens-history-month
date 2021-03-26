@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import image from './images/primaryImage.png'
 
 const Wrapper = styled.div`
     border: none;
     background: transparent;
     display: flex;
     flex-direction: row-reverse;
+    margin: 2rem 0rem 2rem 0rem;
 `
 
 const Body = styled.a`
@@ -31,7 +31,7 @@ const TextBox = styled.div`
     font-size: 24px;
     color: #000000;
 
-    @media only screen and (max-device-width: 750px){
+    @media only screen and (max-width: 750px){
         font-size: 10px;
     }
 `
@@ -54,17 +54,10 @@ const Begin = styled.text`
 
 const Img = styled.div`
     background: white;
+    margin: 2.188rem 3rem 2.188rem 3rem;
 
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2.188rem;
-    margin-bottom: 2.188rem;
-
-    @media only screen and (max-device-width: 750px){
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+    @media only screen and (max-width: 750px){
+        margin: 1rem;
     }
 `
 
@@ -72,14 +65,14 @@ const Photo = styled.img`
     width: 18.938rem;
     height: 12.528rem;
 
-    @media only screen and (max-device-width: 750px){
+    @media only screen and (max-width: 750px){
         width: 8rem;
         height: auto;
     }
 `
 
 
-const NextSection = ( {nextseclink, nextsec} ) => ( //add image prop if needed, currently calling from file
+const NextSection = ( {nextseclink, nextsec, image} ) => ( //add image prop if needed, currently calling from file
     <Wrapper>
         <Body href={nextseclink}>
             <TextBox>

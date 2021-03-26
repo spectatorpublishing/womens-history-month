@@ -23,7 +23,6 @@ const Card = styled.div`
 
     cursor: pointer;
     :hover{
-        background-color: rgba(255, 255, 255, 0.75);
         img{
             opacity: 30%;
         }

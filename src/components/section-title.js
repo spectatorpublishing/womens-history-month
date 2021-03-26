@@ -12,6 +12,7 @@ const Title = styled.div`
     font-size: 4rem;
     background-color: #FDC089;
     padding: 0.625rem 1.25rem 0 8.75rem;
+    text-transform: uppercase;
 
     @media only screen and (max-width: 600px) {
         font-size: 3rem;

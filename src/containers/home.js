@@ -1,20 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { device } from '../device';
+import image from '../components/images/primaryImage.png'
+import Letter from '../components/editorLetter';
 import NextSection from '../components/nextSection';
 
 const HomeContainer = styled.div`
-    background: #FCF7EC;
-`
+
+`;
 
 const Home = () => (
     <HomeContainer>
-        Home
-        <NextSection nextseclink='/article' nextsec='News'></NextSection>
+        <Letter/>
+        <NextSection nextseclink='/article' nextsec='News' image={image}></NextSection>
     </HomeContainer>
-
-
-
 );
 
 export default Home;
