@@ -11,7 +11,7 @@ const App = () => {
       <Navbar/>
       <Router>
         <Switch>
-            <Route exact path='/' component={Home} />
+            <Route path='/' component={Home} />
             <Route
               path='/news'
               render={(props) => (
