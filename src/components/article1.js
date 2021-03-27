@@ -46,7 +46,7 @@ const Wrapper = styled.a`
     img {
         opacity: 0;
         display: block;
-        object-fit: contain;
+        object-fit: cover;
         margin: auto 0rem auto 0rem;
         width: 28rem;
         height: 22rem;    
