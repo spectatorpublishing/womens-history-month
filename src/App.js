@@ -7,9 +7,8 @@ import { news_articles } from './data/news_articles';
 
 const App = () => {
   return (
-    <>
-      <Navbar/>
       <Router basename={process.env.PUBLIC_URL}>
+        <Navbar/>
         <Switch>
             <Route exact path='/' component={Home} />
             <Route
@@ -44,7 +43,6 @@ const App = () => {
             />
         </Switch>
       </Router>
-    </>
   );
 }
 
