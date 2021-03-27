@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './containers/home';
 import Section from './containers/Section';
 import Navbar from './components/navbar';
+import ScrollToTop from "./components/ScrollToTop";
 import { news_articles } from './data/articles';
 import { a_and_e_articles } from './data/articles';
 import { spectrum_articles } from './data/articles';
@@ -12,6 +13,7 @@ const App = () => {
   return (
       <Router basename={process.env.PUBLIC_URL}>
         <Navbar/>
+        <ScrollToTop>
         <Switch>
             <Route exact path='/' component={Home} />
             <Route
@@ -40,6 +42,7 @@ const App = () => {
             />
             <Route exact path='/credits' component={Home} />
         </Switch>
+        </ScrollToTop>
       </Router>
   );
 }

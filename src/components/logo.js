@@ -6,7 +6,7 @@ const Logo = () => {
     return (
         <a href="https://www.columbiaspectator.com/">
             <Wrapper>
-                <img src={logo} alt="Columbia Spectator Logo"></img>
+                <img src="https://www.columbiaspectator.com/pb/resources/img/spectator-logo.png" alt="Columbia Spectator Logo"></img>
             </Wrapper>
         </a>
     );

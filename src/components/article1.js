@@ -27,7 +27,7 @@ const Article = ({article, side}) => {
         <Wrapper href={article.article_link} className={side}>
             {(side == "left") ? null : <Image illustration={illustrations[Math.floor(Math.random() * illustrations.length)]}><img src={article.image_url}/></Image>}
             <div className="textbox">
-                <Title><Letter>{article.article_title.substring(0,1)}</Letter><Text>{article.article_title.substring(1)}</Text></Title>
+                <Title><Text>{article.article_title}</Text></Title>
                 <Author>By {article.article_authors}</Author>
             </div>
             {(side == "right") ? null : <Image illustration={illustrations[Math.floor(Math.random() * illustrations.length)]}><img src={article.image_url}/></Image>}
@@ -91,26 +91,26 @@ const Title = styled.div`
     margin-left: 2rem;
 `;
 
-const Letter = styled.div`
-    font-family: Playfair Display;
-    font-size: 6rem;
-    font-style: italic;
-    font-weight: 700;
-    color: #D0867C;
-    text-transform: uppercase;
-`;
-
 const Text = styled.div`
     font-family: Prata;
     font-size: 2.25rem;
     text-transform: uppercase;
-    margin: 3.5rem 0rem auto -1.8rem;
+    margin: auto 1rem auto 1rem;
+
+    ::first-letter{
+        font-family: Playfair Display;
+        font-size: 6rem;
+        font-style: italic;
+        font-weight: 700;
+        color: #D0867C;
+        text-transform: uppercase;
+    }
 `;
 
 const Author = styled.div`
     font-family: Khula;
     font-size: 1.25rem;
-    margin-left: 3rem;
+    margin: 0rem 1rem 0rem 3rem;
 `;
 const Image = styled.div`
     margin: auto 0rem auto 0rem;

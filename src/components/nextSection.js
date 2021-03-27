@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
     border: none;
@@ -37,11 +38,10 @@ const Image = styled.div`
     }
 `;
 
-const Body = styled.a`
+const Body = styled.div`
     border: none;
     display: flex;
     align-items: center;
-    text-decoration: none;
     margin-left: auto;
     padding-left:2rem;
 
@@ -97,7 +97,8 @@ const Photo = styled.img`
 const NextSection = ( {nextseclink, nextsec, image} ) => ( //add image prop if needed, currently calling from file
     <Wrapper>
         <Image/>
-        <Body href={nextseclink}>
+        <Link to={nextseclink} style={{ textDecoration: 'none' }}>
+        <Body>
             <TextBox>
                 <NextText>Next Section: {nextsec}</NextText>
                 <Begin>Begin Reading</Begin>
@@ -106,6 +107,7 @@ const NextSection = ( {nextseclink, nextsec, image} ) => ( //add image prop if n
                 <Photo src="https://womenshistorymonth2021.s3.amazonaws.com/New+3_5.PNG" />
             </Img>
         </Body>
+        </Link>
     </Wrapper>
 );
 
