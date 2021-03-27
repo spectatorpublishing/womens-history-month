@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://spectatorpublishing.github.io/womens-history-month/static/css/main.79c59e79.chunk.css",
-    "main.js": "https://spectatorpublishing.github.io/womens-history-month/static/js/main.bf2e5b97.chunk.js",
-    "main.js.map": "https://spectatorpublishing.github.io/womens-history-month/static/js/main.bf2e5b97.chunk.js.map",
-    "runtime-main.js": "https://spectatorpublishing.github.io/womens-history-month/static/js/runtime-main.8c8b02e3.js",
-    "runtime-main.js.map": "https://spectatorpublishing.github.io/womens-history-month/static/js/runtime-main.8c8b02e3.js.map",
-    "static/js/2.092b04bc.chunk.js": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.092b04bc.chunk.js",
-    "static/js/2.092b04bc.chunk.js.map": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.092b04bc.chunk.js.map",
-    "index.html": "https://spectatorpublishing.github.io/womens-history-month/index.html",
-    "static/css/main.79c59e79.chunk.css.map": "https://spectatorpublishing.github.io/womens-history-month/static/css/main.79c59e79.chunk.css.map",
-    "static/js/2.092b04bc.chunk.js.LICENSE.txt": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.092b04bc.chunk.js.LICENSE.txt",
-    "static/media/primaryImage.9b7d3ab0.png": "https://spectatorpublishing.github.io/womens-history-month/static/media/primaryImage.9b7d3ab0.png",
-    "static/media/spectator-logo.48429944.svg": "https://spectatorpublishing.github.io/womens-history-month/static/media/spectator-logo.48429944.svg"
+    "main.css": "/static/css/main.79c59e79.chunk.css",
+    "main.js": "/static/js/main.bed6cf6d.chunk.js",
+    "main.js.map": "/static/js/main.bed6cf6d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3d0cf146.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3d0cf146.js.map",
+    "static/js/2.a43d2362.chunk.js": "/static/js/2.a43d2362.chunk.js",
+    "static/js/2.a43d2362.chunk.js.map": "/static/js/2.a43d2362.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.79c59e79.chunk.css.map": "/static/css/main.79c59e79.chunk.css.map",
+    "static/js/2.a43d2362.chunk.js.LICENSE.txt": "/static/js/2.a43d2362.chunk.js.LICENSE.txt",
+    "static/media/primaryImage.9b7d3ab0.png": "/static/media/primaryImage.9b7d3ab0.png",
+    "static/media/spectator-logo.48429944.svg": "/static/media/spectator-logo.48429944.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8c8b02e3.js",
-    "static/js/2.092b04bc.chunk.js",
+    "static/js/runtime-main.3d0cf146.js",
+    "static/js/2.a43d2362.chunk.js",
     "static/css/main.79c59e79.chunk.css",
-    "static/js/main.bf2e5b97.chunk.js"
+    "static/js/main.bed6cf6d.chunk.js"
   ]
 }
