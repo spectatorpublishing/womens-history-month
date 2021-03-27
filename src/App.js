@@ -1,9 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './containers/home';
-import News from './containers/news';
+import Section from './containers/Section';
 import Navbar from './components/navbar';
-import { news_articles } from './data/news_articles';
+import { news_articles } from './data/articles';
+import { a_and_e_articles } from './data/articles';
+import { spectrum_articles } from './data/articles';
+import { sports_articles } from './data/articles';
 
 const App = () => {
   return (
@@ -14,33 +17,28 @@ const App = () => {
             <Route
               exact path='/news'
               render={(props) => (
-                <News {...props} articles={news_articles} header='News' next='Arts & Entertainment' nextLink='/a&e'/>
+                <Section {...props} articles={news_articles} header='News' next='Arts & Entertainment' nextLink='/a&e'/>
               )}
             />
             <Route
               exact path='/a&e'
               render={(props) => (
-                <News {...props} articles={news_articles} header='Arts & Entertainment' next='Spectrum' nextLink='/spectrum'/>
+                <Section {...props} articles={a_and_e_articles} header='Arts & Entertainment' next='Spectrum' nextLink='/spectrum'/>
               )}
             />
             <Route
               exact path='/spectrum'
               render={(props) => (
-                <News {...props} articles={news_articles} header='Spectrum' next='Sports' nextLink='/sports'/>
+                <Section {...props} articles={spectrum_articles} header='Spectrum' next='Sports' nextLink='/sports'/>
               )}
             />
             <Route
               exact path='/sports'
               render={(props) => (
-                <News {...props} articles={news_articles} header='Sports' next='Credits' nextLink='/credits'/>
+                <Section {...props} articles={sports_articles} header='Sports' next='Credits' nextLink='/credits'/>
               )}
             />
-            <Route
-              exact path='/credits'
-              render={(props) => (
-                <News {...props} articles={news_articles} header='Credits' next='Home' nextLink='/'/>
-              )}
-            />
+            <Route exact path='/credits' component={Home} />
         </Switch>
       </Router>
   );

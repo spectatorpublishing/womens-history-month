@@ -53,6 +53,7 @@ const Image = styled.div`
     img {
         max-width: 100%;
         margin: auto;
+        object-fit: contain;
     }
 
     @media only screen and (max-width: 600px) {

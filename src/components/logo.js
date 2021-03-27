@@ -4,7 +4,7 @@ import logo from '../assets/spectator-logo.svg';
 
 const Logo = () => {
     return (
-        <a href="/">
+        <a href="https://www.columbiaspectator.com/">
             <Wrapper>
                 <img src={logo} alt="Columbia Spectator Logo"></img>
             </Wrapper>

@@ -2,21 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../device';
 
-const Article1 = ({title1, author1, imageURL1, link1, title2, author2, imageURL2, link2}) => {
+const Article1 = ({article1, article2}) => {
     return(
         <ArticleSection>
         <Article
-            title={title1}
-            author={author1}
-            imageURL ={imageURL1}
-            link = {link1}
+            article={article1}
             side = 'left'
         />
         <Article
-            title={title2}
-            author={author2}
-            imageURL ={imageURL2}
-            link = {link2}
+            article={article2}
             side = 'right'
         />
         </ArticleSection>
@@ -25,28 +19,20 @@ const Article1 = ({title1, author1, imageURL1, link1, title2, author2, imageURL2
 
 export default Article1;
 
-const Article = ({side, title, author, imageURL, link}) => {
-    if (side == "left"){
-        return(
-            <Wrapper href={link}>
-                <div className="textbox">
-                    <Title><Letter>{title.substring(0,1)}</Letter><Text>{title.substring(1)}</Text></Title>
-                    <Author>By {author}</Author>
-                </div>
-                <Image><img src={imageURL}/></Image>
-            </Wrapper>
+const Article = ({article, side}) => {
+    return (
+        <>
+        {article ?
+        <Wrapper href={article.article_link} className={side}>
+            {(side == "left") ? null : <Image><img src={article.image_url}/></Image>}
+            <div className="textbox">
+                <Title><Letter>{article.article_title.substring(0,1)}</Letter><Text>{article.article_title.substring(1)}</Text></Title>
+                <Author>By {article.article_authors}</Author>
+            </div>
+            {(side == "right") ? null : <Image><img src={article.image_url}/></Image>}
+        </Wrapper> : null}
+        </>
     );
-    } else {
-        return(
-            <Wrapper href={link} className="right">
-                <Image><img src={imageURL}/></Image>
-                <div className="textbox">
-                    <Title><Letter>{title.substring(0,1)}</Letter><Text>{title.substring(1)}</Text></Title>
-                    <Author>By {author}</Author>
-                </div>
-            </Wrapper>
-        );
-    }
 };
 const ArticleSection = styled.div`
     margin: 0rem 8rem 0rem 8rem;
@@ -69,7 +55,7 @@ const Wrapper = styled.a`
     :hover{
         img {
             display: block;
-            object-fit: contain;
+            object-fit: cover;
             margin: auto 0 auto 0rem;
             width: 28rem;
             height: 22rem;
