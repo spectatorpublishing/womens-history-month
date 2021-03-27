@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "https://spectatorpublishing.github.io/womens-history-month/static/css/main.79c59e79.chunk.css",
-    "main.js": "https://spectatorpublishing.github.io/womens-history-month/static/js/main.9791be9e.chunk.js",
-    "main.js.map": "https://spectatorpublishing.github.io/womens-history-month/static/js/main.9791be9e.chunk.js.map",
+    "main.js": "https://spectatorpublishing.github.io/womens-history-month/static/js/main.bf2e5b97.chunk.js",
+    "main.js.map": "https://spectatorpublishing.github.io/womens-history-month/static/js/main.bf2e5b97.chunk.js.map",
     "runtime-main.js": "https://spectatorpublishing.github.io/womens-history-month/static/js/runtime-main.8c8b02e3.js",
     "runtime-main.js.map": "https://spectatorpublishing.github.io/womens-history-month/static/js/runtime-main.8c8b02e3.js.map",
-    "static/js/2.3e06e834.chunk.js": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.3e06e834.chunk.js",
-    "static/js/2.3e06e834.chunk.js.map": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.3e06e834.chunk.js.map",
+    "static/js/2.092b04bc.chunk.js": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.092b04bc.chunk.js",
+    "static/js/2.092b04bc.chunk.js.map": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.092b04bc.chunk.js.map",
     "index.html": "https://spectatorpublishing.github.io/womens-history-month/index.html",
     "static/css/main.79c59e79.chunk.css.map": "https://spectatorpublishing.github.io/womens-history-month/static/css/main.79c59e79.chunk.css.map",
-    "static/js/2.3e06e834.chunk.js.LICENSE.txt": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.3e06e834.chunk.js.LICENSE.txt",
+    "static/js/2.092b04bc.chunk.js.LICENSE.txt": "https://spectatorpublishing.github.io/womens-history-month/static/js/2.092b04bc.chunk.js.LICENSE.txt",
     "static/media/primaryImage.9b7d3ab0.png": "https://spectatorpublishing.github.io/womens-history-month/static/media/primaryImage.9b7d3ab0.png",
     "static/media/spectator-logo.48429944.svg": "https://spectatorpublishing.github.io/womens-history-month/static/media/spectator-logo.48429944.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8c8b02e3.js",
-    "static/js/2.3e06e834.chunk.js",
+    "static/js/2.092b04bc.chunk.js",
     "static/css/main.79c59e79.chunk.css",
-    "static/js/main.9791be9e.chunk.js"
+    "static/js/main.bf2e5b97.chunk.js"
   ]
 }
