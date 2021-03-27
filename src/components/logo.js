@@ -16,7 +16,7 @@ export default Logo;
 
 const Wrapper = styled.div`
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.33rem 1rem 1rem 1rem;
     img {
         width: 12rem;
     }

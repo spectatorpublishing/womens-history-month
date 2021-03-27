@@ -44,7 +44,12 @@ const Wrapper = styled.a`
     flex-direction: row;
 
     img {
-        display: none;
+        opacity: 0;
+        display: block;
+        object-fit: contain;
+        margin: auto 0rem auto 0rem;
+        width: 28rem;
+        height: 22rem;    
     }
 
     .textbox {
@@ -54,11 +59,7 @@ const Wrapper = styled.a`
 
     :hover{
         img {
-            display: block;
-            object-fit: cover;
-            margin: auto 0 auto 0rem;
-            width: 28rem;
-            height: 22rem;
+            opacity: 1;
         }
         .textbox {
             background: rgba( 255, 255, 255, 0.75);
@@ -73,7 +74,7 @@ const Wrapper = styled.a`
     
         :hover{
             img {
-                margin: auto 0rem auto auto;
+                margin: auto 0rem auto 0rem;
             }
         }
     }
