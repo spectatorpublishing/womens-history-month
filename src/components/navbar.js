@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './logo'
+import { Link } from 'react-router-dom';
 import { device } from '../device';
 
 const Navbar = () => {
     return (
         <Nav>
             <Logo/>
-            <a href="/">
+            <Link to="/">
                 Home
-            </a>
+            </Link>
+            <Link to="/news">
+                News
+            </Link>
             <a href="/news">
                 News
             </a>
