@@ -14,6 +14,18 @@ const Navbar = () => {
             <Link to="/news">
                 News
             </Link>
+            <Link to="/a&e">
+                Arts & Entertainment
+            </Link>
+            <Link to="/spectrum">
+                Spectrum
+            </Link>
+            <Link to="/sports">
+                Sports
+            </Link>
+            <Link to="/credits">
+                Credits
+            </Link>
         </Nav>
     );
 };
