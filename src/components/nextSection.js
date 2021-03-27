@@ -6,8 +6,13 @@ const Wrapper = styled.div`
     border: none;
     background: transparent;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin: 2rem 0rem 2rem 0rem;
+
+    @media only screen and (max-width: 1160px){
+        font-size: 10px;
+        flex-direction: row-reverse;
+    }
 `
 
 const Image = styled.div`
