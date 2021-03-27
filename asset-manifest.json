@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/womens-history-month/static/css/main.79c59e79.chunk.css",
+    "main.js": "/womens-history-month/static/js/main.f9b9d7a5.chunk.js",
+    "main.js.map": "/womens-history-month/static/js/main.f9b9d7a5.chunk.js.map",
+    "runtime-main.js": "/womens-history-month/static/js/runtime-main.50de01c2.js",
+    "runtime-main.js.map": "/womens-history-month/static/js/runtime-main.50de01c2.js.map",
+    "static/js/2.cc8f7665.chunk.js": "/womens-history-month/static/js/2.cc8f7665.chunk.js",
+    "static/js/2.cc8f7665.chunk.js.map": "/womens-history-month/static/js/2.cc8f7665.chunk.js.map",
+    "index.html": "/womens-history-month/index.html",
+    "static/css/main.79c59e79.chunk.css.map": "/womens-history-month/static/css/main.79c59e79.chunk.css.map",
+    "static/js/2.cc8f7665.chunk.js.LICENSE.txt": "/womens-history-month/static/js/2.cc8f7665.chunk.js.LICENSE.txt",
+    "static/media/primaryImage.9b7d3ab0.png": "/womens-history-month/static/media/primaryImage.9b7d3ab0.png",
+    "static/media/spectator-logo.48429944.svg": "/womens-history-month/static/media/spectator-logo.48429944.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50de01c2.js",
+    "static/js/2.cc8f7665.chunk.js",
+    "static/css/main.79c59e79.chunk.css",
+    "static/js/main.f9b9d7a5.chunk.js"
+  ]
+}
