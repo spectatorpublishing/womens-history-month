@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import SectionTitle from '../components/section-title';
 import Article1 from '../components/article1';
 import ArticleCards from '../components/articleCards';
