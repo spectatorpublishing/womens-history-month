@@ -7,7 +7,7 @@ import { news_articles } from './data/news_articles';
 
 const App = () => {
   return (
-    <main>
+    <>
       <Navbar/>
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
@@ -44,7 +44,7 @@ const App = () => {
             />
         </Switch>
       </Router>
-    </main>
+    </>
   );
 }
 
