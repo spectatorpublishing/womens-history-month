@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     border: none;
     background: transparent;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: 2rem 0rem 2rem 0rem;
 `
 

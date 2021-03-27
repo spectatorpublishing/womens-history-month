@@ -31,7 +31,6 @@ const Card = styled.div`
 `;
 
 const Title = styled.div`
-    font-weight: 400;
     font-size: 1.125rem;
     margin: 0 1.25rem 0 1.25rem;
 `;
@@ -41,6 +40,11 @@ const Name = styled.div`
     font-weight: 400;
     font-size: 1.125rem;
     margin: 0 1.25rem 0 1.25rem;
+
+    @media only screen and (max-width: 768px) {
+        margin: 0.5rem 1.25rem 0.5rem 1.25rem;
+        font-size: 1rem;
+    }
 `;
 
 const Image = styled.div`

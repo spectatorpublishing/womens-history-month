@@ -3,10 +3,7 @@ import styled from 'styled-components';
 
 const Letter = () => (
     <Wrapper>
-        <Row>
-            <StyledL>L</StyledL>
-            <Title>ETTER FROM THE EDITOR</Title>
-        </Row>
+        <Title>LETTER FROM THE EDITOR</Title>
         <Text>
             <p>Dear readers, </p>
             <p>Every March, we focus on the experiences and achievements of women around the world in honor of Women’s History Month. Discussions around the historical gender disparities at Columbia are often cut off either in 1981, when Columbia College made the decision to allow women to enroll, or in 1983, when the first women actually matriculated. However, this edition is a reminder that the struggle for equality did not end when women could attend Columbia College—it continues to this day.</p>
@@ -35,27 +32,32 @@ const Title = styled.div`
     font-size: 2.25rem;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: -1rem;
-`;
 
-const StyledL = styled.div`
-    font-family: Playfair Display;
-    font-size: 6rem;
-    font-style: italic;
-    font-weight: 700;
-    color: #FDC089;
-    margin-top: -1rem;
-`;
+    ::first-letter{
+        font-family: Playfair Display;
+        font-size: 6rem;
+        font-style: italic;
+        font-weight: 700;
+        color: #FDC089;
+    }
 
-const Row = styled.div`
-    display: flex;
-    flex-direction: row;
+    @media only screen and (max-width: 768px){
+        font-size: 1.188rem;
+
+        ::first-letter{
+            font-size: 3.125rem;
+        }
+    }
 `;
 
 const Text = styled.div`
     p{
         font-family: Khula;
         font-size: 1.125rem;
+
+        @media only screen and (max-width: 768px){
+            font-size: 1rem;
+        }
     }
 `;
 
@@ -64,11 +66,19 @@ const Signature = styled.div`
         font-family: Prata;
         font-size: 1.625rem;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 768px){
+            font-size: 1.125rem;
+        }
     }
 
     .title {
         font-family: Khula;
         font-size:  1.125rem;
+
+        @media only screen and (max-width: 768px){
+            font-size: 1rem;
+        }
     }
 
     margin: 1rem 0rem 1rem 0rem;
