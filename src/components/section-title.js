@@ -8,7 +8,7 @@ const Box = styled.div`
 
     @media only screen and (max-width: 768px) {
       margin: 1.25rem 0 1rem 0;
-  }
+    }
 `;
 
 const Title = styled.div`
@@ -22,6 +22,11 @@ const Title = styled.div`
         font-size: 3rem;
         padding: 0.25rem 1.25rem 0 2rem;
     }
+
+    @media only screen and (max-width: 500px) {
+      font-size: 2rem;
+      padding: 0.25rem 1rem 0 2rem;
+  }
 `;
 
 const SectionTitle = ({ title }) => {

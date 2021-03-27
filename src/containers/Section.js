@@ -15,20 +15,30 @@ const Section = ({articles, header, next, nextLink}) => {
             article1={articles[0]}
             article2={articles[1]}
         />
+        {articles[4] ?
         <ArticleCards
             article1={articles[2]}
             article2={articles[3]}
             article3={articles[4]}
-        />
+        />: 
+        <Article1
+            article1={articles[2]}
+            article2={articles[3]}
+        />}
         <Article1
             article1={articles[5]}
             article2={articles[6]}
         />
+        {articles[9] ?
         <ArticleCards
             article1={articles[7]}
             article2={articles[8]}
             article3={articles[9]}
-        />
+        />: 
+        <Article1
+            article1={articles[7]}
+            article2={articles[8]}
+        />}
         <Article1
             article1={articles[10]}
             article2={articles[11]}

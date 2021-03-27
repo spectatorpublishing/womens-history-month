@@ -8,7 +8,7 @@ const Articles = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 0rem 5rem 0rem 5rem;
+    padding: 0rem 5rem 1rem 5rem;
     margin: 2rem 0rem 2rem 0rem;
     background-color: rgba(255, 255, 255, 0.75);
 `;

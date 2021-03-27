@@ -8,12 +8,16 @@ const Letter = () => (
             <Title>ETTER FROM THE EDITOR</Title>
         </Row>
         <Text>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et neque ex. Vestibulum vitae lorem at dui pellentesque aliquam. Aenean mi massa, blandit eu faucibus in, dapibus in nisi. Vivamus consequat, tortor ac molestie dignissim, nunc purus consequat sem, in tincidunt enim purus eu massa. In hac habitasse platea dictumst. Duis sit amet erat vel dui semper cursus. Quisque vitae vulputate lacus. Nam risus risus, hendrerit in ullamcorper sed, viverra eu arcu. Ut euismod, risus non consectetur ultrices, ante ipsum elementum augue, sit amet commodo orci quam tempus felis. Sed et lacus id turpis venenatis vehicula. Nullam sed eros id diam suscipit tincidunt sed quis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at velit in massa ultricies ultrices.</p>
-            <p>Nam scelerisque vel sem et vestibulum. Praesent et suscipit nisi. Maecenas tincidunt lectus non accumsan vehicula. In rutrum risus eget libero laoreet, id sollicitudin mi accumsan. Phasellus a ligula finibus, molestie urna a, porta ligula. Cras hendrerit risus ut posuere congue. Ut tincidunt, felis ut rhoncus dignissim, dolor tellus mollis odio, nec euismod tellus tortor sit amet diam. Curabitur in eleifend ante.</p>
-            <p>Nullam cursus vel tellus ut sodales. Cras quis euismod sem. In rhoncus elit fringilla, dapibus mauris et, tempor ex. Nulla metus dui, mattis sit amet dictum sit amet, mattis in lectus. In blandit molestie molestie. Quisque tempor laoreet sollicitudin. Aenean tempor vulputate arcu. Nunc commodo a mi ut elementum. Quisque quis metus nisi. Vivamus eleifend turpis ac molestie scelerisque. Suspendisse vel nisl tempor, semper elit ac, maximus quam. Proin et volutpat tellus.</p>
+            <p>Dear readers, </p>
+            <p>Every March, we focus on the experiences and achievements of women around the world in honor of Women’s History Month. Discussions around the historical gender disparities at Columbia are often cut off either in 1981, when Columbia College made the decision to allow women to enroll, or in 1983, when the first women actually matriculated. However, this edition is a reminder that the struggle for equality did not end when women could attend Columbia College—it continues to this day.</p>
+            <p>Despite only 40 years of coeducation at Columbia College, the history of women at the University goes back to its founding. For too long, the narratives of women have been erased, minimized, or co-opted by men. As we celebrate Women’s History Month, we hope to highlight the triumphs of women in the greater Columbia community since the decision to go coed 40 years ago while shining a steady light on the disparities that still exist.</p>
+            <p>Within Spectator’s Women’s History Month issue, you can learn about the pervasive funding disparities between men’s and women’s sports at Columbia and examine the gender-based misconduct changes the Graduate Workers of Columbia-United Auto Workers union is fighting for to protect survivors in its strike against the University. You will find our coverage of the importance of the Athena Film Festival in highlighting women filmmakers; profiles of student musicians, community activists, and Ivy League coaches who have not let any barriers impede their success; and the creation of the Barnard-Columbia Athletic Consortium, which allowed students who attend historically women’s colleges to compete in Division I athletics for the first time.</p>        
+            <p>As a corporate board made up of three women—one from Barnard, one from Columbia College, and the other from the School of Engineering and Applied Science—we have encountered the complicated relationship the University has with gender in various forms. We want to take this opportunity to center the amazing work of our staff—which is 76 percent female—while bearing in mind that the structures in place here at Columbia, even 40 years after coed integration, continuously disadvantage many of our staffers, readers, and loved ones.</p>
+            <p>We hope that within our edition, you can learn the stories of the contributions of women scholars, activists, coaches, athletes, artists, musicians, and learners within our community. We also want to emphasize that much of their work is not yet done. The issues and accomplishments covered in this edition are not one-off events or isolated incidents; they come together to form a connected, everlasting story.</p>
         </Text>
-        <Signature><div className='name'>SARAH BRAKA</div><div className='title'>Editor in Chief</div></Signature>
-        <Signature><div className='name'>ELIZABETH KARPEN</div><div className='title'>Managing Editor</div></Signature>
+        <Signature><div className='name'>Sarah Braka</div><div className='title'>Editor in Chief</div></Signature>
+        <Signature><div className='name'>Elizabeth Karpen</div><div className='title'>Managing Editor</div></Signature>
+        <Signature><div className='name'>Tamarah Wallace</div><div className='title'>Publisher</div></Signature>
     </Wrapper>
 );
 
@@ -59,6 +63,7 @@ const Signature = styled.div`
     .name {
         font-family: Prata;
         font-size: 1.625rem;
+        text-transform: uppercase;
     }
 
     .title {
