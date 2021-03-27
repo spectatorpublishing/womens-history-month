@@ -9,7 +9,7 @@ const App = () => {
   return (
     <main>
       <Navbar/>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
             <Route exact path='/' component={Home} />
             <Route
