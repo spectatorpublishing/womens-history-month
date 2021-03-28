@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './containers/home';
 import Section from './containers/Section';
 import Navbar from './components/navbar';
+// import ArticleTest from './containers/article-test';
+import Credits from './containers/credits';
+import Logo from './components/logo';
 import ScrollToTop from "./components/ScrollToTop";
 import { news_articles } from './data/articles';
 import { a_and_e_articles } from './data/articles';
@@ -16,6 +19,7 @@ const App = () => {
         <ScrollToTop>
         <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/credits' component={Credits} />
             <Route
               exact path='/news'
               render={(props) => (
