@@ -25,6 +25,9 @@ const Wrapper = styled.div`
     flex-direction: column;
     margin: 2rem 2rem 0rem 2rem;
     padding: 2rem 2rem 0rem 2rem;
+    @media only screen and (max-width: 768px){
+        padding: 0rem;
+    }
 `;
 
 const Title = styled.div`
@@ -39,13 +42,17 @@ const Title = styled.div`
         font-style: italic;
         font-weight: 700;
         color: #FDC089;
+        margin: auto -1.5rem auto auto;
+        vertical-align: -1rem;
     }
 
     @media only screen and (max-width: 768px){
         font-size: 1.188rem;
 
         ::first-letter{
-            font-size: 3.125rem;
+            font-size: 5rem;
+            margin: auto -0.75rem auto auto;
+            vertical-align: -1.5rem;
         }
     }
 `;
