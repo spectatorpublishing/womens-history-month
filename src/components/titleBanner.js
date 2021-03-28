@@ -17,9 +17,13 @@ const Banner = () => (
 export default Banner;
 
 const Wrapper = styled.div`
-    height: 100vh;
     width: 100vw;
-    background-image: url("banner-image.png");
+    background-image: url("https://womenshistorymonth2021.s3.amazonaws.com/New+3_5.PNG");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    padding-top: 8%;
+    top: 0;
 `;
 
 const Text = styled.div`
@@ -42,9 +46,10 @@ const Row = styled.div`
     width: fit-content;
 
     &.left{
-        text-align: left;
-        padding-left: 132px;
-        padding-right: .5rem;
+        width: 350px;
+        text-align: right;
+        padding-left: 100px;
+        padding-right: 1rem;
     }
 
     &.right{
@@ -52,6 +57,6 @@ const Row = styled.div`
         margin-bottom: 19px;
         align-self: flex-end;
         text-align: right;
-        padding-right: 132px;
+        padding-right: 100px;
     }
 `;
