@@ -24,11 +24,19 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin: 2rem 2rem 0rem 2rem;
-    padding: 2rem 2rem 0rem 2rem;
-    @media only screen and (max-width: 768px){
-        padding: 0rem;
+    padding: 2rem 8rem 0rem 8rem;
+    @media only screen and (max-width: 1200px){
+        padding: 2rem 6rem 0rem 6rem;
     }
-`;
+    @media only screen and (max-width: 1000px){
+        padding: 2rem 4rem 0rem 4rem;
+    }
+    @media only screen and (max-width: 768px){
+        padding: 2rem 2rem 0rem 2rem;
+    }
+    @media only screen and (max-width: 400px){
+        padding: 0;
+    }`;
 
 const Title = styled.div`
     font-family: Prata;
