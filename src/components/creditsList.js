@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { device } from '../device';
 import Article1 from '../components/article1';
-// import titleImage from '../components/images/titleImage.png'
-import creditsImage1 from '../components/images/creditsImage1.png'
-import creditsImage2 from '../components/images/creditsImage2.png'
 
 const width = window.innerWidth;
 
@@ -108,6 +105,13 @@ const Text2 = styled.div`
     text-align: center;
     margin: -1rem 0rem 3rem -.5rem;
 `;
+const ClipArt = styled.img`
+    height: 20rem;
+    width: auto;
+`
+
+
+
 
 var titletext1 = "";
 var titletext2 = "";
@@ -191,11 +195,11 @@ const CreditsList = () => {
                                 <p>Emma Snoddy</p>
                             </div>
                         </SubDiv>
-                        {/* <SubDiv>
+                        <SubDiv>
                             <div>
-                                {creditsImage1}
+                                <ClipArt src="https://womenshistorymonth2021.s3.amazonaws.com/File_003(1).png" />
                             </div>
-                        </SubDiv> */}
+                        </SubDiv>
                     </Column>
                     <Column>
                         <SubDiv>
@@ -210,11 +214,11 @@ const CreditsList = () => {
                                 <p>Jade Justice, Features Editor</p>
                             </div>
                         </SubDiv>
-                        {/* <SubDiv>
+                        <SubDiv>
                             <div>
-                                {creditsImage2}
+                                <ClipArt src="https://womenshistorymonth2021.s3.amazonaws.com/File_001(1).png" />
                             </div>
-                        </SubDiv> */}
+                        </SubDiv>
                         <SubDiv>
                             <div>
                                 <h2>News</h2>
@@ -310,7 +314,6 @@ const CreditsList = () => {
                 <Wrapper>
                     <Title>
                         <TopLine><Text1><LetterMobile>T</LetterMobile>he Columbia Daily Spectator staff who made this issue possible</Text1></TopLine>
-                        {/* {titleImage} */}
                     </Title>
                     <Text>
                     <Column>
@@ -358,11 +361,6 @@ const CreditsList = () => {
                                 <p>Emma Snoddy</p>
                             </div>
                         </SubDiv>
-                        {/* <SubDiv>
-                            <div>
-                                {creditsImage1}
-                            </div>
-                        </SubDiv> */}
                         <SubDiv>
                             <h2>Corporate Board</h2>
                             <p>Sarah Braka, Editor in Chief</p>
@@ -375,11 +373,11 @@ const CreditsList = () => {
                                 <p>Jade Justice, Features Editor</p>
                             </div>
                         </SubDiv>
-                        {/* <SubDiv>
+                        <SubDiv>
                             <div>
-                                {creditsImage2}
+                                <ClipArt src="https://womenshistorymonth2021.s3.amazonaws.com/File_001(1).png" />
                             </div>
-                        </SubDiv> */}
+                        </SubDiv>
                         <SubDiv>
                             <div>
                                 <h2>News</h2>
@@ -422,6 +420,11 @@ const CreditsList = () => {
                                 <p>Ashleigh Lackey</p>
                                 <p>Rebecca Wachen</p>
                                 <p>Bernard Wang</p>
+                            </div>
+                        </SubDiv>
+                        <SubDiv>
+                            <div>
+                                <ClipArt src="https://womenshistorymonth2021.s3.amazonaws.com/File_003(1).png" />
                             </div>
                         </SubDiv>
                         <SubDiv>
