@@ -5,6 +5,8 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;    
     font-weight: 400;
+    background: rgba(255, 255, 255, 0.75);
+    margin: 1rem;
 
     @media only screen and (max-width: 600px) {
         width: 18rem;
@@ -13,7 +15,6 @@ const Card = styled.div`
     @media only screen and (min-width: 601px) {
         height: 22.5rem;
         width: 22.5rem;
-        margin: 1rem;
     }
 
     a {
@@ -30,7 +31,6 @@ const Card = styled.div`
 `;
 
 const Title = styled.div`
-    font-weight: 400;
     font-size: 1.125rem;
     margin: 0 1.25rem 0 1.25rem;
 `;
@@ -40,6 +40,11 @@ const Name = styled.div`
     font-weight: 400;
     font-size: 1.125rem;
     margin: 0 1.25rem 0 1.25rem;
+
+    @media only screen and (max-width: 768px) {
+        margin: 0.5rem 1.25rem 0.5rem 1.25rem;
+        font-size: 1rem;
+    }
 `;
 
 const Image = styled.div`
@@ -52,6 +57,7 @@ const Image = styled.div`
     img {
         max-width: 100%;
         margin: auto;
+        object-fit: contain;
     }
 
     @media only screen and (max-width: 600px) {
@@ -61,13 +67,13 @@ const Image = styled.div`
 
 `;
 
-const ArticleCard = ({ title, name, imageURL, buttonLink }) => {
+const ArticleCard = ({ article }) => {
     return (
       <Card> 
-        <a href={buttonLink}>
-                <Image> <img alt='article image' src={imageURL} /> </Image>
-            <Title>{title}</Title>
-            <Name>{name}</Name>
+        <a href={article.article_link}>
+                <Image> <img alt='article image' src={article.image_url} /> </Image>
+            <Title>{article.article_title}</Title>
+            <Name>{article.article_authors}</Name>
         </a>
       </Card>
     );

@@ -14,7 +14,7 @@ const Home = () => (
     <HomeContainer>
         <Banner/>
         <Letter/>
-        <NextSection nextseclink='/article' nextsec='News' image={image}></NextSection>
+        <NextSection nextseclink='/news' nextsec='News' image={image}></NextSection>
     </HomeContainer>
 );
 

@@ -4,9 +4,9 @@ import logo from '../assets/spectator-logo.svg';
 
 const Logo = () => {
     return (
-        <a href="/">
+        <a href="https://www.columbiaspectator.com/">
             <Wrapper>
-                <img src={logo} alt="Columbia Spectator Logo"></img>
+                <img src="https://www.columbiaspectator.com/pb/resources/img/spectator-logo.png" alt="Columbia Spectator Logo"></img>
             </Wrapper>
         </a>
     );
@@ -16,7 +16,7 @@ export default Logo;
 
 const Wrapper = styled.div`
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.33rem 1rem 1rem 1rem;
     img {
         width: 12rem;
     }

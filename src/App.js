@@ -1,29 +1,49 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './containers/home';
-import News from './containers/news';
-import AandE from './containers/AandE';
-import Spectrum from './containers/Spectrum';
-import Sports from './containers/Sports';
+import Section from './containers/Section';
 import Navbar from './components/navbar';
-import ArticleTest from './components/articleCards';
-import Logo from './components/logo';
+import ScrollToTop from "./components/ScrollToTop";
+import { news_articles } from './data/articles';
+import { a_and_e_articles } from './data/articles';
+import { spectrum_articles } from './data/articles';
+import { sports_articles } from './data/articles';
 
 const App = () => {
   return (
-    <main>
-      <Navbar/>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Navbar/>
+        <ScrollToTop>
         <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/news' component={News} />
-            <Route exact path='/a&e' component={AandE} />
-            <Route exact path='/spectrum' component={Spectrum} />
-            <Route exact path='/sports' component={Sports} />
-            <Route exact path='/credits' component={News} />
+            <Route
+              exact path='/news'
+              render={(props) => (
+                <Section {...props} articles={news_articles} header='News' next='Arts & Entertainment' nextLink='/a&e'/>
+              )}
+            />
+            <Route
+              exact path='/a&e'
+              render={(props) => (
+                <Section {...props} articles={a_and_e_articles} header='Arts & Entertainment' next='Spectrum' nextLink='/spectrum'/>
+              )}
+            />
+            <Route
+              exact path='/spectrum'
+              render={(props) => (
+                <Section {...props} articles={spectrum_articles} header='Spectrum' next='Sports' nextLink='/sports'/>
+              )}
+            />
+            <Route
+              exact path='/sports'
+              render={(props) => (
+                <Section {...props} articles={sports_articles} header='Sports' next='Credits' nextLink='/credits'/>
+              )}
+            />
+            <Route exact path='/credits' component={Home} />
         </Switch>
+        </ScrollToTop>
       </Router>
-    </main>
   );
 }
 
