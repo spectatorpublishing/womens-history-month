@@ -1,30 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './logo'
+import { Link } from 'react-router-dom';
 import { device } from '../device';
 
 const Navbar = () => {
     return (
         <Nav>
             <Logo/>
-            <a href="/">
+            <Link to="/">
                 Home
-            </a>
-            <a href="/news">
+            </Link>
+            <Link to="/news">
                 News
-            </a>
-            <a href="/a&e">
+            </Link>
+            <Link to="/a&e">
                 Arts & Entertainment
-            </a>
-            <a href="/spectrum">
+            </Link>
+            <Link to="/spectrum">
                 Spectrum
-            </a>
-            <a href="/sports">
+            </Link>
+            <Link to="/sports">
                 Sports
-            </a>
-            <a href="/credits">
+            </Link>
+            <Link to="/credits">
                 Credits
-            </a>
+            </Link>
         </Nav>
     );
 };
@@ -34,10 +35,18 @@ export default Navbar;
 const Nav = styled.nav`
     display: flex;
     flex-direction: row;
+    font-family: Khula;
+    font-size: 18px;
+    margin: 0rem 6rem 0rem 3rem;
+
     a{
         text-decoration: none;
-        padding: 1rem;
+        padding: 0rem;
         color: black;
         margin: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
     }
 `;
