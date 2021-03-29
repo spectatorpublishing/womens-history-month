@@ -212,7 +212,7 @@ const Navbar = () => {
                 return(
                     <>
                     {(show) ? 
-                        <Link activeClassName="active">
+                        <Link activeClassName="active" onClick={() => setToggle(!show)}>
                             <NavLink to={item.url} exact={item.exact}>
                                 {item.title}
                             </NavLink>
