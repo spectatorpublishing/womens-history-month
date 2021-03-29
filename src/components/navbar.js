@@ -159,7 +159,8 @@ const Link = styled.div`
 const MenuItems = [
     {
         title: "Home",
-        url: "/home",
+        url: "/",
+        exact: true,
     },
     {
         title: "News",
@@ -212,7 +213,7 @@ const Navbar = () => {
                     <>
                     {(show) ? 
                         <Link activeClassName="active">
-                            <NavLink to={item.url}>
+                            <NavLink to={item.url} exact={item.exact}>
                                 {item.title}
                             </NavLink>
                         </Link> : null}
