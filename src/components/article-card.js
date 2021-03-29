@@ -28,6 +28,14 @@ const Card = styled.div`
             opacity: 30%;
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        :hover{
+            img{
+                opacity: 100%;
+            }
+        }
+    }
 `;
 
 const Title = styled.div`
