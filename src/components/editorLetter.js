@@ -23,8 +23,8 @@ export default Letter;
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 2rem 2rem 0rem 2rem;
-    padding: 2rem 2rem 0rem 2rem;
+    margin: 1rem 2rem 0rem 2rem;
+    padding: 1rem 2rem 0rem 2rem;
 `;
 
 const Title = styled.div`

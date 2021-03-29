@@ -3,6 +3,10 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     margin: 0rem 5rem 0rem 5rem;    
+
+    @media only screen and (max-width: 768px) {
+        margin: 0rem 2rem 0rem 2rem;  
+    }
 `;
 
 const Direction = styled.div`
@@ -31,11 +35,19 @@ const Text = styled.div`
         @media only screen and (max-width: 750px) {
             font-size: 18px;
         }
+
+        @media only screen and (max-width: 425px) {
+            font-size: 16px;
+        }
     }
     
     @media only screen and (max-width: 750px) {
         padding: 0 2rem 0rem 2rem;
         font-size: 17px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        font-size: 14px;
     }
 `;
 
@@ -77,12 +89,22 @@ const Title = styled.div`
         @media only screen and (max-width: 750px) {
             font-size: 58px;
         }
+
+        @media only screen and (max-width: 425px) {
+            font-size: 30px;
+        }
     }
 
     @media only screen and (max-width: 750px) {
         text-align: center;
         margin: 1rem 0rem 2rem 0rem;
         font-size: 25px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        text-align: center;
+        margin: 1rem 0rem 2rem 0rem;
+        font-size: 20px;
     }
 `;
 

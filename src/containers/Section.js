@@ -60,7 +60,7 @@ const Mobile = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         display: none;
     }
 `;
