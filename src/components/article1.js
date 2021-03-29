@@ -67,7 +67,7 @@ const Wrapper = styled.a`
     .textbox {
         margin: auto 0rem auto auto;
         width: 80vw;
-        padding: 0.2rem 1rem 1.2rem 1rem;
+        padding: 2rem 1rem 2rem 1rem;
     }
 
     :hover{
@@ -86,7 +86,7 @@ const Wrapper = styled.a`
 
         .textbox {
             margin: auto 0rem auto auto;
-            padding: 0.2rem 1rem 1.2rem 1rem;
+            padding: 2rem 1rem 2rem 1rem;
             text-align: right;
         }
     }
