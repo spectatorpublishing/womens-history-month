@@ -32,7 +32,7 @@ const Wrapper = styled.div`
         padding: 2rem 4rem 0rem 4rem;
     }
     @media only screen and (max-width: 768px){
-        padding: 2rem 2rem 0rem 2rem;
+        padding: 2rem 1rem 0rem 1rem;
     }
     @media only screen and (max-width: 400px){
         padding: 0;
