@@ -18,7 +18,7 @@ const App = () => {
         <Navbar/>
         <ScrollToTop>
         <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path='/home' component={Home} />
             <Route exact path='/credits' component={Credits} />
             <Route
               exact path='/news'

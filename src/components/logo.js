@@ -4,20 +4,23 @@ import logo from '../assets/spectator-logo.svg';
 
 const Logo = () => {
     return (
-        <a href="https://www.columbiaspectator.com/">
-            <Wrapper>
+            <Wrapper href="https://www.columbiaspectator.com/">
                 <img src="https://www.columbiaspectator.com/pb/resources/img/spectator-logo.png" alt="Columbia Spectator Logo"></img>
             </Wrapper>
-        </a>
     );
 };
 
 export default Logo;
 
-const Wrapper = styled.div`
-    margin: 1rem;
-    padding: 1.33rem 1rem 1rem 1rem;
+const Wrapper = styled.a`
+    margin: 0rem;
+    padding: 1rem 0rem 0rem 3rem;
     img {
         width: 12rem;
+    }
+
+    @media only screen and (max-width: 1070px){
+        padding: 1rem 0rem 0rem 1rem;
+        margin: 0rem 1rem 0rem 1rem;
     }
 `;
