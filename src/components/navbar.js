@@ -88,6 +88,10 @@ const Wrapper = styled.div`
             }
         }
     }
+
+    @media only screen and (max-width: 1023px){
+        padding-bottom: 1rem;
+    }
 `;
 
 const Row = styled.div`
@@ -124,8 +128,8 @@ const Nav = styled.div`
 const Link = styled.div`
     
     padding: 1rem 2rem;
-    margin: 0rem auto -0.2rem auto;
-    border-bottom: 3px solid #CDCDCD;
+    margin: 0rem auto 0rem auto;
+    border-bottom: 0px solid #CDCDCD;
 
     &:hover{
         border-bottom: 3px solid #000000;

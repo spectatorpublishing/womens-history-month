@@ -27,6 +27,11 @@ const Title = styled.div`
       font-size: 2rem;
       padding: 0.25rem 1rem 0 2rem;
   }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.5rem;
+    padding: 0.25rem 1rem 0 2rem;
+}
 `;
 
 const SectionTitle = ({ title }) => {
