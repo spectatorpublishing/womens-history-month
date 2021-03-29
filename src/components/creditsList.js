@@ -138,7 +138,7 @@ const CreditsList = () => {
                         </SubDiv>
                         <SubDiv>
                             <h2>Design and Development</h2>
-                            <p>Caroline Su, Product Designer</p>
+                            <p>Christina Su, Product Designer</p>
                             <p>Laura Castro Venegas, Engineering Manager</p>
                             <p>Raymond Banke, Illustrations Deputy</p>
                             <p>Mirah Shi, Product Manager</p>
@@ -279,7 +279,7 @@ const CreditsList = () => {
                     <Column>
                         <SubDiv>
                             <h2>Design and Development</h2>
-                            <p>Caroline Su, Product Designer</p>
+                            <p>Christina Su, Product Designer</p>
                             <p>Laura Castro Venegas, Engineering Manager</p>
                             <p>Raymond Banke, Illustrations Deputy</p>
                             <p>Mirah Shi, Product Manager</p>
@@ -429,7 +429,7 @@ const CreditsList = () => {
                     <Column>
                         <SubDiv>
                             <h2>Design and Development</h2>
-                            <p>Caroline Su, Product Designer</p>
+                            <p>Christina Su, Product Designer</p>
                             <p>Laura Castro Venegas, Engineering Manager</p>
                             <p>Raymond Banke, Illustrations Deputy</p>
                             <p>Mirah Shi, Product Manager</p>
