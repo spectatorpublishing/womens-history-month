@@ -85,6 +85,8 @@ const Title = styled.div`
         font-weight: 700;
         color: #FDC089;
         text-transform: uppercase;
+        margin: auto -1.2rem auto auto;
+        vertical-align: sub;
 
         @media only screen and (max-width: 750px) {
             font-size: 58px;
