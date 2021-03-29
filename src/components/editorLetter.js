@@ -25,6 +25,11 @@ const Wrapper = styled.div`
     flex-direction: column;
     margin: 1rem 2rem 0rem 2rem;
     padding: 1rem 2rem 0rem 2rem;
+
+    @media only screen and (max-width: 768px){
+        padding: 1rem 1rem 0rem 1rem;
+        margin: 1rem 1rem 0rem 1rem;
+    }
 `;
 
 const Title = styled.div`
