@@ -3,60 +3,130 @@ import styled from 'styled-components';
 
 const Banner = () => (
     <Wrapper>
-        <Text>
-            <Row className='left'>40 years</Row>
-            <Row className='left'>of</Row>
-        </Text>
-        <Text>
-            <Row className='right'>women at</Row>
-            <Row className='right'>Columbia</Row>
-        </Text>
+        <Section className='left'>
+            <Row className='left'><Text className='left'>40 years</Text></Row>
+            <Row className='left'><Text className='left'>of</Text></Row>
+        </Section>
+        <Section className='right'>
+            <Row className='right'><Text className='right'>women at</Text></Row>
+            <Row className='right'><Text className='right'>Columbia</Text></Row>
+        </Section>
     </Wrapper>
 );
 
 export default Banner;
 
 const Wrapper = styled.div`
-    width: 100vw;
+    height: 25rem;
     background-image: url("https://womenshistorymonth2021.s3.amazonaws.com/New+3_5.PNG");
     background-position: center;
-    background-size: 70%;
+    background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 8%;
+    padding: 5rem 0rem 5rem 0rem;
     top: 0;
+
+    @media only screen and (max-width: 768px) {
+        height: 40rem;
+        padding: 5rem 0rem 5rem 0rem;
+        background-image: url("https://womenshistorymonth2021.s3.amazonaws.com/3_5.png");
+    }
+
+    @media only screen and (max-width: 430px) {
+        height: 20rem;
+        padding: 2rem 0rem 2rem 0rem;
+    }
+`;
+
+const Section = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 768px) {
+
+        &.right{
+            margin-top: 20rem;
+        }
+
+        &.left{
+            margin-bottom: 10rem;
+        }
+    }
+
+    @media only screen and (max-width: 570px) {
+
+        &.right{
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+        }
+
+        &.left{
+            margin-bottom: 10rem;
+            margin-top: 5rem;
+        }
+    }
+
+    @media only screen and (max-width: 430px) {
+
+        &.right{
+            margin-top: 5rem;
+            margin-bottom: 0rem;
+        }
+
+        &.left{
+            margin-bottom: 0rem;
+            margin-top: 0rem;
+        }
+    }
 `;
 
 const Text = styled.div`
     font-family: Prata;
-    font-style: normal;
-    font-weight: normal;
     font-size: 64px;
-    line-height: 100px;
     text-transform: uppercase;
     color: #000000;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    &.left{
+        text-align: right;
+        margin-left: auto;
+        margin-right: 1.5rem;
+    }
+
+    &.right{
+        align-self: flex-end;
+        text-align: left;
+        margin-right: auto;
+        margin-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media only screen and (max-width: 430px) {
+        font-size: 26px;
+    }
 `;
 
 const Row = styled.div`
     margin-bottom: 11px; 
-    height: 88px;
     background: #FDC089;
-    width: fit-content;
+    width: 30rem;
 
     &.left{
-        width: 350px;
-        text-align: right;
-        padding-left: 100px;
-        padding-right: 1rem;
+        margin-right: auto;
     }
 
     &.right{
-        width: 400px;
-        margin-bottom: 19px;
-        align-self: flex-end;
-        text-align: right;
-        padding-right: 100px;
+        margin-left: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 20rem;
+    }
+
+    @media only screen and (max-width: 430px) {
+        width: 13rem;
     }
 `;
