@@ -22,7 +22,7 @@ const Image = styled.div`
     background-size: contain;
     width: 40rem;
     height: 20rem;
-    margin: 0rem 10rem 0rem 5rem;
+    margin: 0rem auto 0rem 5rem;
 
     @media only screen and (max-width: 1470px){
         width: 30rem;
