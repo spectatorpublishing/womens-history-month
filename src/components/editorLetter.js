@@ -23,14 +23,20 @@ export default Letter;
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 1rem 2rem 0rem 2rem;
-    padding: 1rem 2rem 0rem 2rem;
-
-    @media only screen and (max-width: 768px){
-        padding: 1rem 1rem 0rem 1rem;
-        margin: 1rem 1rem 0rem 1rem;
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 2rem 8rem 0rem 8rem;
+    @media only screen and (max-width: 1200px){
+        padding: 2rem 6rem 0rem 6rem;
     }
-`;
+    @media only screen and (max-width: 1000px){
+        padding: 2rem 4rem 0rem 4rem;
+    }
+    @media only screen and (max-width: 768px){
+        padding: 2rem 2rem 0rem 2rem;
+    }
+    @media only screen and (max-width: 400px){
+        padding: 0;
+    }`;
 
 const Title = styled.div`
     font-family: Prata;
@@ -44,13 +50,17 @@ const Title = styled.div`
         font-style: italic;
         font-weight: 700;
         color: #FDC089;
+        margin: auto -1.5rem auto auto;
+        vertical-align: -1rem;
     }
 
     @media only screen and (max-width: 768px){
         font-size: 1.188rem;
 
         ::first-letter{
-            font-size: 3.125rem;
+            font-size: 5rem;
+            margin: auto -0.75rem auto auto;
+            vertical-align: -1.5rem;
         }
     }
 `;

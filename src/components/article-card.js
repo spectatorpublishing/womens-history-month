@@ -5,11 +5,11 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;    
     font-weight: 400;
-    background: rgba(255, 255, 255, 0.75);
     margin: 1rem;
 
     @media only screen and (max-width: 600px) {
-        width: 18rem;
+        width: 20rem;
+        margin: 1rem;
     }
     
     @media only screen and (min-width: 601px) {
@@ -69,10 +69,9 @@ const Image = styled.div`
     }
 
     @media only screen and (max-width: 600px) {
-        width: 16rem;
-        height: 10rem;
+        max-width: 18rem;
+        max-height: 11.25rem;
     }
-
 `;
 
 const ArticleCard = ({ article }) => {

@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     margin: 2rem 0rem 2rem 0rem;
 
     @media only screen and (max-width: 1160px){
-        font-size: 10px;
+        font-size: 16px;
         flex-direction: row-reverse;
     }
 `
@@ -65,7 +65,7 @@ const TextBox = styled.div`
     color: #000000;
 
     @media only screen and (max-width: 750px){
-        font-size: 10px;
+        font-size: 16px;
     }
 `
 
@@ -84,7 +84,7 @@ const Img = styled.div`
     margin: 2.188rem 3rem 2.188rem 3rem;
 
     @media only screen and (max-width: 750px){
-        margin: 1rem 3rem 1rem 1rem;
+        margin: 1rem 2rem 1rem 1rem;
     }
 `
 
@@ -105,8 +105,8 @@ const NextSection = ( {nextseclink, nextsec, image} ) => ( //add image prop if n
         <Link to={nextseclink} style={{ textDecoration: 'none' }}>
         <Body>
             <TextBox>
-                <NextText>Next Section: {nextsec}</NextText>
-                <Begin>Begin Reading</Begin>
+                <NextText>{nextsec}</NextText>
+                <Begin>Read Next Section:</Begin>
             </TextBox>
             <Img>
                 <Photo src="https://womenshistorymonth2021.s3.amazonaws.com/New+3_5.PNG" />

@@ -38,6 +38,13 @@ const Article = ({article, side}) => {
 
 const ArticleSection = styled.div`
     margin: 0rem 8rem 0rem 8rem;
+    @media only screen and (max-width: 1200px) {
+        margin: 0rem 4rem 0rem 4rem;
+    }
+    @media only screen and (max-width: 1000px) {
+        margin: 0rem 2rem 0rem 2rem;
+    }
+
 `;
 
 const Wrapper = styled.a`
@@ -60,7 +67,7 @@ const Wrapper = styled.a`
     .textbox {
         margin: auto 0rem auto auto;
         width: 80vw;
-        padding: 0.2rem 1rem 1.2rem 1rem;
+        padding: 2rem 1rem 2rem 1rem;
     }
 
     :hover{
@@ -79,7 +86,7 @@ const Wrapper = styled.a`
 
         .textbox {
             margin: auto 0rem auto auto;
-            padding: 0.2rem 1rem 1.2rem 1rem;
+            padding: 2rem 1rem 2rem 1rem;
             text-align: right;
         }
     }
@@ -92,6 +99,7 @@ const Title = styled.div`
 `;
 
 const Text = styled.div`
+    line-height: 3rem;
     font-family: Prata;
     font-size: 2.25rem;
     text-transform: uppercase;
@@ -104,6 +112,8 @@ const Text = styled.div`
         font-weight: 700;
         color: #D0867C;
         text-transform: uppercase;
+        margin: auto -1rem auto auto;
+        vertical-align: sub;
     }
 `;
 
