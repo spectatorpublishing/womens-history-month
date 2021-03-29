@@ -135,6 +135,12 @@ export const spectrum_articles = [
 
 export const sports_articles = [
     {
+        image_url: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WPOQAMFV3RAV5I6ALLF56IGWJU.jpg",
+        article_title: "Even as she pursues a professional career, Barnard’s first national champion stays versatile off the fencing strip",
+        article_authors: "Mackenzie George",
+        article_link: "https://www.columbiaspectator.com/sports/2021/03/22/even-as-she-pursues-a-professional-career-barnards-first-national-champion-stays-versatile-off-the-fencing-strip/"
+    },
+    {
         image_url: "https://womenshistorymonth2021.s3.amazonaws.com/IMG_4053.JPG",
         article_title: "We have work to do’: examining Columbia Athletics’ persistent gender disparity in team funding",
         article_authors: "Clara Ence Morse",
