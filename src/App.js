@@ -29,19 +29,19 @@ const App = () => {
             <Route
               exact path='/a&e'
               render={(props) => (
-                <Section {...props} articles={a_and_e_articles} header='Arts & Entertainment' next='Spectrum' nextLink='/spectrum'/>
-              )}
-            />
-            <Route
-              exact path='/spectrum'
-              render={(props) => (
-                <Section {...props} articles={spectrum_articles} header='Spectrum' next='Sports' nextLink='/sports'/>
+                <Section {...props} articles={a_and_e_articles} header='Arts & Entertainment' next='Sports' nextLink='/sports'/>
               )}
             />
             <Route
               exact path='/sports'
               render={(props) => (
-                <Section {...props} articles={sports_articles} header='Sports' next='Credits' nextLink='/credits'/>
+                <Section {...props} articles={sports_articles} header='Sports' next='Spectrum' nextLink='/spectrum'/>
+              )}
+            />
+            <Route
+              exact path='/spectrum'
+              render={(props) => (
+                <Section {...props} articles={spectrum_articles} header='Spectrum' next='Credits' nextLink='/credits'/>
               )}
             />
         </Switch>

@@ -135,7 +135,7 @@ export const spectrum_articles = [
 
 export const sports_articles = [
     {
-        image_url: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SFDSLN6KIBHKTB7JGKSGSUWQ3E.jpg",
+        image_url: "https://womenshistorymonth2021.s3.amazonaws.com/IMG_4053.JPG",
         article_title: "We have work to do’: examining Columbia Athletics’ persistent gender disparity in team funding",
         article_authors: "Clara Ence Morse",
         article_link: "https://www.columbiaspectator.com/sports/2021/03/26/we-have-work-to-do-examining-columbia-athletics-persistent-gender-disparity-in-team-funding/"

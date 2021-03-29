@@ -17,11 +17,11 @@ const Navbar = () => {
             <Link to="/a&e">
                 Arts & Entertainment
             </Link>
-            <Link to="/spectrum">
-                Spectrum
-            </Link>
             <Link to="/sports">
                 Sports
+            </Link>
+            <Link to="/spectrum">
+                Spectrum
             </Link>
             <Link to="/credits">
                 Credits
