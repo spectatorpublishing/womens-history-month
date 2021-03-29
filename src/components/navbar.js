@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import Logo from './logo'
 import { NavLink } from 'react-router-dom';
 import { device } from '../device';
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     position: sticky;
     top: 0rem;
     background-color: #FCF7EC;
-    margin: 0rem auto 0rem auto;
+    margin: 0rem 0rem 0rem 0rem;
 
     .react-icons{
         margin: 2rem 0rem -2rem 0rem;
@@ -62,6 +62,32 @@ const Wrapper = styled.div`
         }
         
     }
+
+    a{
+        color: black;
+        text-decoration: none;
+
+        &.active {
+            padding-bottom: 0rem;
+            border-bottom: 3px solid #000000;
+            transition: all 0.2s ease;
+    
+            @media only screen and (max-width: 1023px){
+                padding: 0.5rem 0rem 0.5rem 0rem;
+                border-bottom: 0px solid #000000;
+                transition: none;
+                background: #FDC089;
+                width: 70vw;
+            }
+    
+            @media only screen and (max-width: 560px){
+                padding: 0.5rem 0rem 0.5rem 0rem;
+            }
+            @media only screen and (max-width: 420px){
+                padding: 0.5rem 0rem 0.5rem 0rem;
+            }
+        }
+    }
 `;
 
 const Row = styled.div`
@@ -96,10 +122,6 @@ const Nav = styled.div`
 `;
 
 const Link = styled.div`
-    a{
-        color: black;
-        text-decoration: none;
-    }
     
     padding: 1rem 2rem;
     margin: 0rem auto -0.2rem auto;
@@ -117,26 +139,6 @@ const Link = styled.div`
         }
     }
 
-    .active {
-        padding-bottom: 1rem;
-        border-bottom: 3px solid #000000;
-        transition: all 0.2s ease;
-
-        @media only screen and (max-width: 1023px){
-            padding: 1rem 8rem 1rem 8rem;
-            border-bottom: 0px solid #000000;
-            transition: none;
-            background: #FDC089;
-            width: 70vw;
-        }
-
-        @media only screen and (max-width: 560px){
-            padding: 1rem 3rem 1rem 3rem;
-        }
-        @media only screen and (max-width: 420px){
-            padding: 1rem 1rem 1rem 1rem;
-        }
-    }
 
     @media only screen and (max-width: 1259px){
         padding: 1rem 1rem;
@@ -146,13 +148,11 @@ const Link = styled.div`
         padding-bottom: none;
         border-bottom: 0px solid #000000;
         transition: none;
-        padding: 0.5rem 2rem 0.5rem 2rem;
-        width: 80vw;
+        padding: 0rem;
     }
 
     @media only screen and (max-width: 425px){
-        width: 80vw;
-        padding: 1rem 2rem 1rem 1rem;
+        padding: 0.5rem 0rem 0.5rem 0rem;
     }
 `;
 
@@ -212,11 +212,11 @@ const Navbar = () => {
                 return(
                     <>
                     {(show) ? 
+                    <NavLink to={item.url} exact={item.exact} value={{ activeClassName: 'active' }}>
                         <Link activeClassName="active" onClick={() => setToggle(!show)}>
-                            <NavLink to={item.url} exact={item.exact}>
                                 {item.title}
-                            </NavLink>
-                        </Link> : null}
+                        </Link>
+                    </NavLink> : null}
                     </>
                 )
             })}
