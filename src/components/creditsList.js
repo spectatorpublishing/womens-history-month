@@ -90,10 +90,12 @@ const Title = styled.div`
 
         @media only screen and (max-width: 750px) {
             font-size: 58px;
+            margin: auto 0rem auto auto;
         }
 
         @media only screen and (max-width: 425px) {
-            font-size: 30px;
+            font-size: 40px;
+            margin: auto -0.5rem auto auto;
         }
     }
 
