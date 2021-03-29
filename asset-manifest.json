@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.79c59e79.chunk.css",
-    "main.js": "/static/js/main.53e24f6a.chunk.js",
-    "main.js.map": "/static/js/main.53e24f6a.chunk.js.map",
+    "main.js": "/static/js/main.a347048e.chunk.js",
+    "main.js.map": "/static/js/main.a347048e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3d0cf146.js",
     "runtime-main.js.map": "/static/js/runtime-main.3d0cf146.js.map",
-    "static/js/2.37dacb85.chunk.js": "/static/js/2.37dacb85.chunk.js",
-    "static/js/2.37dacb85.chunk.js.map": "/static/js/2.37dacb85.chunk.js.map",
+    "static/js/2.4e13e39c.chunk.js": "/static/js/2.4e13e39c.chunk.js",
+    "static/js/2.4e13e39c.chunk.js.map": "/static/js/2.4e13e39c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.79c59e79.chunk.css.map": "/static/css/main.79c59e79.chunk.css.map",
-    "static/js/2.37dacb85.chunk.js.LICENSE.txt": "/static/js/2.37dacb85.chunk.js.LICENSE.txt",
+    "static/js/2.4e13e39c.chunk.js.LICENSE.txt": "/static/js/2.4e13e39c.chunk.js.LICENSE.txt",
     "static/media/primaryImage.9b7d3ab0.png": "/static/media/primaryImage.9b7d3ab0.png",
     "static/media/spectator-logo.48429944.svg": "/static/media/spectator-logo.48429944.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3d0cf146.js",
-    "static/js/2.37dacb85.chunk.js",
+    "static/js/2.4e13e39c.chunk.js",
     "static/css/main.79c59e79.chunk.css",
-    "static/js/main.53e24f6a.chunk.js"
+    "static/js/main.a347048e.chunk.js"
   ]
 }
