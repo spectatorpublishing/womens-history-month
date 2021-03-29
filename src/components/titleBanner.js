@@ -27,13 +27,13 @@ const Wrapper = styled.div`
 
     @media only screen and (max-width: 768px) {
         height: 40rem;
-        padding: 5rem 0rem 5rem 0rem;
+        padding: 3rem 0rem 5rem 0rem;
         background-image: url("https://womenshistorymonth2021.s3.amazonaws.com/3_5.png");
     }
 
     @media only screen and (max-width: 430px) {
         height: 20rem;
-        padding: 2rem 0rem 2rem 0rem;
+        padding: 1.3rem 0rem 2rem 0rem;
     }
 `;
 
@@ -44,7 +44,7 @@ const Section = styled.div`
     @media only screen and (max-width: 768px) {
 
         &.right{
-            margin-top: 20rem;
+            margin-top: 22rem;
         }
 
         &.left{
@@ -68,7 +68,7 @@ const Section = styled.div`
     @media only screen and (max-width: 430px) {
 
         &.right{
-            margin-top: 5rem;
+            margin-top: 10rem;
             margin-bottom: 0rem;
         }
 
@@ -105,7 +105,17 @@ const Text = styled.div`
     }
 
     @media only screen and (max-width: 430px) {
-        font-size: 26px;
+        font-size: 24px;
+        margin-top: 0.2rem;
+        margin-bottom: 0rem;
+
+        &.left{
+            margin-right: 1rem;
+        }
+    
+        &.right{
+            margin-left: 1rem;
+        }
     }
 `;
 
@@ -127,6 +137,7 @@ const Row = styled.div`
     }
 
     @media only screen and (max-width: 430px) {
-        width: 13rem;
+        width: 12rem;
+        margin-bottom: 5px;
     }
 `;

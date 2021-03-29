@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, HashRouter } from 'react-router-dom';
 import Home from './containers/home';
 import Section from './containers/Section';
 import Navbar from './components/navbar';
@@ -44,7 +44,6 @@ const App = () => {
                 <Section {...props} articles={sports_articles} header='Sports' next='Credits' nextLink='/credits'/>
               )}
             />
-            <Route exact path='/credits' component={Home} />
         </Switch>
         </ScrollToTop>
       </Router>
