@@ -5,7 +5,7 @@ import logo from '../assets/spectator-logo.svg';
 const Logo = () => {
     return (
             <Wrapper href="https://www.columbiaspectator.com/">
-                <img src="https://www.columbiaspectator.com/pb/resources/img/spectator-logo.png" alt="Columbia Spectator Logo"></img>
+                <img src="https://cds-archives.s3.amazonaws.com/pb/resources/img/spectator-logo.png" alt="Columbia Spectator Logo"></img>
             </Wrapper>
     );
 };
